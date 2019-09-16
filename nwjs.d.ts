@@ -1,3 +1,4 @@
+type DOMWindow = Window;
 declare namespace nw {
     const App: NWApp;
     class NWApp {
@@ -170,7 +171,7 @@ declare namespace nw {
         inject_js_end?: string;
     }
     class Window {
-        public readonly window: any;
+        public readonly window: DOMWindow;
         public x: number;
         public y: number;
         public width: number;
